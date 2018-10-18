@@ -14,7 +14,7 @@ oSEPA.customer_data = oDataTable   <-- add your data object in here
 Dim sXml As String = oSEPA.GenerateSepaXML()
 ```
 
-Check a example here: [https://github.com/jovana/SEPA-Batch-Generator/blob/master/sepa_test.aspx](sepa_test.aspx)
+Check a example here: [sepa_test.aspx](https://github.com/jovana/SEPA-Batch-Generator/blob/master/sepa_test.aspx)
 
 
 ### Output Example
