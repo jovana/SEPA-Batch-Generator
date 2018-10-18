@@ -1,24 +1,3 @@
-# SEPA-Batch-Generator
-SEPA XML Payment Batch Generator
-
-This SEPA XML generator can be used to generate payment XML files for European banks.
-
-### How To Use
-- Copy the class class_sepa_generator.vb into your App_Code folder in your project
-- Init the class and execute the function oSEPA.GenerateSepaXML() to generate your SEPA XML file
-
-### Usage Example
-```
-Dim oSEPA As New cSepaXML
-oSEPA.customer_data = oDataTable   <-- add your data object in here
-Dim sXml As String = oSEPA.GenerateSepaXML()
-```
-
-Check a example here: sepa_test.aspx
-
-
-### Output Example
-```
 <?xml version="1.0" encoding="utf-8"?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.008.001.02" xmlns:xsi="www.w3.org/2001/XMLSchema-instance">
 	<CstmrDrctDbtInitn>
@@ -290,6 +269,3 @@ Check a example here: sepa_test.aspx
 		</PmtInf>
 	</CstmrDrctDbtInitn>
 </Document>
-
-```
-
